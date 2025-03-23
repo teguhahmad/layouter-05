@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-of-contents {
+  @apply space-y-2;
+}
+
+.table-of-contents .toc-frontmatter,
+.table-of-contents .toc-chapter,
+.table-of-contents .toc-subchapter,
+.table-of-contents .toc-item {
+  @apply flex items-baseline gap-2;
+}
+
+.table-of-contents .toc-number {
+  @apply font-medium min-w-[4rem];
+}
+
+.table-of-contents .toc-title {
+  @apply flex-shrink-0;
+}
+
+.table-of-contents .toc-dots {
+  @apply flex-1 border-b border-dashed border-gray-300 mx-2;
+}
+
+.table-of-contents .toc-page {
+  @apply text-right min-w-[3rem];
+}
+
+.table-of-contents .toc-frontmatter {
+  @apply font-medium;
+}
+
+.table-of-contents .toc-chapter {
+  @apply font-medium mt-4 first:mt-0;
+}
+
+.table-of-contents .toc-subchapter {
+  @apply text-gray-600;
+}
